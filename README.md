@@ -9,7 +9,7 @@ Run `python MissingGeneration.py` can generate a series of missing data from the
 ### Step 3:
 Run `python ./ImputationTest/MultipleImputationTest.py` to execute imputation.It will yield KNN, SVD, iter_svd, RF, NS_KNN, and QRILC imputation results. The results are saved in the FillData\MultipleImputation folder.
 #### Tips：
-When executing the QRILC interpolation, you need to call the local R environment, so please modify the fourth line of the ImputationAlgorithm.py file as follows: "os.environ['R_HOME'] = "D:/PROGRA~1/R/R-xxx.xx/", and comment out the corresponding code in the MultipleImputationTest.py file if you do not need to execute QRILC."
+When executing the QRILC interpolation, you need to call the local R environment, so please modify the fourth line of the ImputationAlgorithm.py file as follows: "os.environ['R_HOME'] = "D:/PROGRA~1/R/R-xxx.xx/", and comment out the corresponding code in the MultipleImputationTest.py file if you do not need to execute QRILC.
 
 ### Step 4:
 Run `python ./ImputationTest/ASVDImputationTest.py` to execute imputation. Estimates of ASVD-MNAR and ASVD-MNAR for a range of different parameters will be produced. The results are saved in the FillData\ASVDImputation folder.
